@@ -1,0 +1,108 @@
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+
+	<link rel='Stylesheet' type='text/css' href='ImageTag.css'/>
+<link rel='Stylesheet' type='text/css' href='jquery.Jcrop.css'/>
+<link rel='Stylesheet' type='text/css' href='css/imgareaselect-default.css'/>
+	
+<script type='text/javascript' src='jquery-1.8.0.min.js'></script>
+<script type='text/javascript' src='jquery-ui-1.9.1.js'></script>
+<script type='text/javascript' src='jquery.mousewheel.min.js'></script>
+<script type='text/javascript' src='jshashtable-2.1.js'></script>
+<script type='text/javascript' src='jquery.Jcrop.js'></script>
+<script type='text/javascript' src='scripts/jquery.imgareaselect.js'></script>
+<script type='text/javascript' src='common.js'></script>
+<script type='text/javascript' src='sectionContain.js'></script>
+<script type='text/javascript' src='pinResults.js'></script>
+<script type='text/javascript' src='ImageTag.js'></script>
+<script type='text/javascript' src='pin.js'></script>
+<script type='text/javascript' src='Area.js'></script>
+<script type='text/javascript' src='sectiondesign.js'></script>
+<script type="text/javascript" src="ctrl/ctrlinputbox.js"></script>
+<script type="text/javascript" src="ctrl/ctrlcheckbox.js"></script>
+<script type="text/javascript" src="ctrl/ctrltextarea.js"></script>
+<script type="text/javascript" src="ctrl/ctrlLabel.js"></script>
+<script type="text/javascript" src="ctrl/ctrlDate.js"></script>
+<script type="text/javascript" src="ctrl/ctrldropdown.js"></script>
+<script type="text/javascript" src="ctrl/ctrlradio.js"></script>
+<script type="text/javascript" src="ctrl/ctrlmultiselect.js"></script>
+<script type="text/javascript" src="ctrl/ctrlFileUpload.js"></script>
+
+
+
+<script type='text/javascript'>
+ $(document).ready(function() {
+   
+  var imageTag = $('#imageTag').ctrlImageTag(pinArray,sections);
+ });
+
+</script>
+</head>
+
+<body>
+<div id="imageTag">
+<div id="data"></div>
+<div id="codinates"></div>
+	<div id="pinimg" ><img src='images/drop-pin.png' class='img-drop-pin'></div>
+	<div id="area" ><img src='images/drop-pin3.png' class='img-drop-pin'></div>
+
+	<div id='ImageTagContent'>
+		<div id='close' class='aa-close aa-div-hide'></div><div id='copy' class='aa-copy aa-div-hide'></div>
+		<div id='ctrlwrap' class='af-element-content ctrlcontent' >
+			<div id='ctrlcontent' style='width:auto;' >
+			
+
+				<div class="noSel controlsBg">	
+	
+					<div id="zoomPuls" class="noSel" style="position: absolute; display: block; left: 4px; top: 11px; width: 20px; height: 20px; z-index: 1; 	opacity: 0.7;">
+					<div  style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-radius: 2px 2px 2px 2px;">	+ </div>
+					<div id="_ziover" style="position: absolute; left: 0px; top: 0px; width: 20px; height: 20px; display: none; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-radius: 2px 2px 2px 2px;">	</div>
+					
+					<div id="_zi_icon" style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; background: transparent url(zoom_assets/icons.png) -16px -16px no-repeat;">	</div>
+					</div>
+
+					<div id="zoomMinus" class="noSel" style="position: absolute; display: block; left: 4px; top: 33px; width: 20px; height: 20px; z-index: 2; opacity: 0.4;">
+					<div  style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-radius: 2px 2px 2px 2px;"> - </div>
+					<div id="_zoover" style="position: absolute; left: 0px; top: 0px; width: 20px; height: 20px; display: none; background: none repeat scroll 0% 0% rgb(255, 255, 255); border-radius: 2px 2px 2px 2px;">	</div>
+					<div id="_zo_icon" style="position: absolute; left: 1px; top: 1px; width: 18px; height: 18px; background: transparent url(zoom_assets/icons.png) -66px -16px no-repeat;">	</div>
+					</div>
+
+
+				</div>			
+
+			    <div id='ImageContent' class='af-img-div'>
+				
+						
+							<img id='tagImg' src='images/IMG_1986.JPG' height='600' class='tagImg'/>
+						
+					
+				</div>
+				
+						<form action="" method="post">
+						  <input type="hidden" name="x1" value="" />
+						  <input type="hidden" name="y1" value="" />
+						  <input type="hidden" name="x2" value="" />
+						  <input type="hidden" name="y2" value="" />
+						</form>
+				
+				
+				<div id='resultContent' class='af-result-div'></div>
+				<div  id ='SecContent' class="SecContent">
+				
+				</div>
+				
+</div>				
+				
+		
+			</div>
+		</div>
+
+
+
+
+	</div>
+</div>
+</body>
+</html>
